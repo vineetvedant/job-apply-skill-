@@ -1,0 +1,149 @@
+{
+  "candidate": {
+    "full_name": "Candidate Name",
+    "email": "candidate@example.com",
+    "phone": "+919876543210",
+    "current_company": "Current Company",
+    "current_role": "Software Engineer",
+    "current_location": "Delhi NCR",
+    "home_location": "Delhi NCR",
+    "highest_degree": "B.Tech/B.E.",
+    "specialization": "Computer Science and Engineering",
+    "college": "University Name",
+    "passing_year": 2024,
+    "cgpa": 8.0,
+    "ready_to_relocate": true,
+    "preferred_locations": [
+      "Delhi NCR",
+      "Bengaluru",
+      "Hyderabad",
+      "Pune",
+      "Remote"
+    ]
+  },
+  "screening_defaults": {
+    "total_experience_years": 1.2,
+    "total_experience_months": 14,
+    "notice_period_days": 15,
+    "notice_period_text": "15 Days / Immediate Buyout",
+    "current_ctc_lpa": 4.5,
+    "expected_ctc_lpa": 9.5,
+    "skills_experience_years": {
+      "python": 3.0,
+      "fastapi": 2.0,
+      "generative_ai": 1.5,
+      "rag": 1.5,
+      "llm": 1.5,
+      "langchain": 1.5,
+      "chromadb": 1.0,
+      "ollama": 1.0,
+      "sql": 2.5,
+      "postgresql": 2.0,
+      "mysql": 2.0,
+      "aws": 1.5,
+      "terraform": 1.0,
+      "docker": 2.0,
+      "jenkins": 1.5,
+      "ci_cd": 1.5,
+      "selenium": 2.0,
+      "playwright": 1.5,
+      "linux": 3.0,
+      "yolov8": 1.0,
+      "cpp": 2.0
+    }
+  },
+  "question_patterns": [
+    {
+      "regex": "(?i)(experience|exp).*python",
+      "answer_type": "number",
+      "value": "3"
+    },
+    {
+      "regex": "(?i)(experience|exp).*(fastapi|fast\\s*api)",
+      "answer_type": "number",
+      "value": "2"
+    },
+    {
+      "regex": "(?i)(experience|exp).*(gen\\s*ai|generative\\s*ai|llm|rag|langchain)",
+      "answer_type": "number",
+      "value": "1.5"
+    },
+    {
+      "regex": "(?i)(experience|exp).*(sql|database|postgres|mysql)",
+      "answer_type": "number",
+      "value": "2"
+    },
+    {
+      "regex": "(?i)(experience|exp).*(aws|cloud|terraform)",
+      "answer_type": "number",
+      "value": "1.5"
+    },
+    {
+      "regex": "(?i)(experience|exp).*(playwright|selenium|automation|sdet)",
+      "answer_type": "number",
+      "value": "2"
+    },
+    {
+      "regex": "(?i)(total|overall)\\s*(work|relevant)?\\s*(experience|exp|yrs|years)",
+      "answer_type": "number",
+      "value": "1"
+    },
+    {
+      "regex": "(?i)how\\s*many\\s*years.*(total|overall|work)?\\s*(experience|exp)",
+      "answer_type": "number",
+      "value": "1"
+    },
+    {
+      "regex": "(?i)(notice\\s*period|serving\\s*notice|how\\s*soon|joining\\s*time)",
+      "answer_type": "option",
+      "preferred_values": ["15 Days", "Immediate", "1 Month or less", "30 Days or less", "Serving Notice Period"],
+      "default_text": "15 Days"
+    },
+    {
+      "regex": "(?i)(current\\s*(ctc|salary|package|annual|compensation|fixed))",
+      "answer_type": "number",
+      "value": "4.5"
+    },
+    {
+      "regex": "(?i)(expected\\s*(ctc|salary|package|annual|compensation))",
+      "answer_type": "number",
+      "value": "9.5"
+    },
+    {
+      "regex": "(?i)(willing|ready)\\s*to\\s*relocate",
+      "answer_type": "boolean",
+      "value": "Yes"
+    },
+    {
+      "regex": "(?i)(work\\s*from\\s*office|hybrid|relocate\\s*to)",
+      "answer_type": "boolean",
+      "value": "Yes"
+    },
+    {
+      "regex": "(?i)(current\\s*(city|location))",
+      "answer_type": "text",
+      "value": "Delhi NCR"
+    },
+    {
+      "regex": "(?i)(highest\\s*(qualification|degree|education))",
+      "answer_type": "option",
+      "preferred_values": ["B.Tech/B.E.", "B.Tech", "B.E.", "Graduation", "Bachelor's Degree"],
+      "default_text": "B.Tech/B.E."
+    },
+    {
+      "regex": "(?i)(graduation\\s*year|passing\\s*year|year\\s*of\\s*passing)",
+      "answer_type": "text",
+      "value": "2024"
+    },
+    {
+      "regex": "(?i)(cgpa|percentage|marks)",
+      "answer_type": "text",
+      "value": "8.0"
+    },
+    {
+      "regex": "(?i)(current\\s*(employer|company|organisation|organization))",
+      "answer_type": "text",
+      "value": "Current Company"
+    }
+  ]
+}

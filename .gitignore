@@ -1,0 +1,67 @@
+# ==============================================================================
+# Git Ignore - Job Automation Skills (LinkedIn & Naukri)
+# ==============================================================================
+
+# Credentials & Environment Variables (CRITICAL)
+.env
+*.env
+!.env.example
+.env*.local
+
+# Personal Resumes & Candidate PDFs
+*.pdf
+Vedant_Singh_Base_Resume.pdf
+
+# Browser User Data, Profiles & Active Sessions (Cookies, Cache, Auth Tokens)
+.session/
+*/.session/
+chrome_profile/
+*/chrome_profile/
+Default/
+*/Default/
+
+# Runtime Application Data, Scraped Leads & Execution Screenshots
+**/data/staged_outreach/
+**/data/*.json
+!**/data/screening_answers.json
+!**/data/screening_answers.example.json
+**/data/*.png
+**/data/*.jpg
+**/data/*.jpeg
+**/data/*.eml
+*.png
+*.jpg
+*.jpeg
+*.eml
+
+# Scratch, Testing & Local Exploration Directory
+Antigravati woorking/
+Antigravity working/
+
+# Python & Build Artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+vedant-agent-venv/
+*.egg-info/
+dist/
+build/
+
+# Logs & Ledgers
+*.log
+*.csv
+/tmp/
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
